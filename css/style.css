@@ -31,4 +31,88 @@ h1{
     margin: 20px 0;
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*
+  
+   MAIN
+
+*/
+
+.cards-container > .card{
+    float: left;
+    width: calc(100%/3);
+}
+
+.cards-container > .card > *{
+    float: left;
+}
+
+.cards-container > .card > .card-img-container {
+    width: 100px;
+    height: 100px;
+}
+
+.cards-container > .card > .card-img-container >img {
+    width: 100%;
+    display: block;
+}
+
+.cards-container > .card > .card-info-container {
+    max-width: calc(100% - 100px);
+    height: 100px;
+    padding: 10px;
+
+}
+
+.cards-container > .card > .card-info-container > h3 {
+    color: rgb(112, 4, 4);  
+}
+.cards-container > .card > .card-info-container > h4 {
+    color: rgb(6, 110, 11);
+    font-weight: normal; 
+    margin: 10px 0;
+}
+
+
+
+/*
+   DEBUG
+
+*/
+
+.debug .container{
+    background-color: beige;
+    border: 1px dashed red;
+    min-height: 100px;
+}
+
+.debug .header{
+    background-color: aquamarine;
+    border: 1px dashed green;
+
+}
+
+.debug main{
+    background-color: aqua;
+    border: 1px dashed yellow;
+}
+
+.debug .cards-container{
+    background-color: lightcoral;
+    border: 1px dashed red;
+    min-height: 150px;
+
+}
+
+.debug .card{
+    background-color: cadetblue;
+    border:  1px dashed blue;
+    min-height: 50px;
+}
 
